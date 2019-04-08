@@ -1,0 +1,95 @@
+.m-tb {
+ margin: 10rem 0;
+}
+.mb {
+  margin-bottom: 3rem;
+}
+.ml-3 {
+  margin-right: 3rem!important;
+}
+
+
+
+.mr-3 {
+  margin-right: 3rem;
+}
+.mr-5 {
+  margin-right:5rem !important;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.m-header {
+  margin: 4rem 0;
+}
+
+.padding {
+  padding: 3rem;
+}
+
+.allWrap.mt-s {
+  top: 37px;
+}
+
+.delovi-bg {
+  background-image: url(../img/mercedes.jpeg);
+  background-position: top;
+  background-size: cover;
+}
+
+.delovi-header {
+  background: rgba(0,0,0,0.7);
+  color: $grey-light-1;
+  
+
+  & .section__header__title {
+    color: $grey-light-1;
+  }
+
+  & .section__header__p {
+    color: $grey-light-4;
+    
+  }
+}
+
+.dark-bg {
+  background-color: rgba(0, 0, 0, .7);
+  padding: 3.5rem;
+  padding-right: 0;
+  color: #fff;
+  margin-left: auto;
+  margin-right: 5rem;
+  flex-basis: 30%;
+  & a {
+    color: $grey-light-3;
+  }
+}
+
+.usluge-bg {
+  background: url(../img/auto-mechanic.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.show-drop {
+  max-height: 300rem;
+}
+.close-drop {
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.main__section__header.bg-dark {
+  background-color: $grey-dark-1;
+
+  & a {
+    color: $grey-light-1;
+  }
+}
+
+.search__input.sm {
+  width: 25%;
+  margin-right: 0!important;
+}

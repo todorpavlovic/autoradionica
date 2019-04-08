@@ -1,0 +1,442 @@
+//////////////////////////
+// HEADER SEARCH
+
+.head {
+  font-weight: 400;
+  font-size: 3rem;
+  color: $grey-dark-1;
+  position: relative;
+  padding-left: 2rem;
+  
+  &::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: $color-primary;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-1px);
+    left: 0;
+  }
+
+  
+}
+
+
+.main__header {
+    color: $grey-dark-2;
+    background-color:#fff;
+    position: relative;
+    z-index: 2;
+    margin: 0 2rem;
+    padding: 0 1rem;
+    display: inline-block;
+    font-weight: inherit;
+    font-size: 3.2rem;
+}
+
+.main__section {
+  display: flex;
+  margin-top: 5rem;
+  
+
+  &__header {
+    background-color: $grey-light-5;
+    font-weight: inherit;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $grey-dark-1;
+
+    & a {
+      display: block;
+      display: flex;
+      align-self: stretch;
+      justify-content: center;
+      align-items: center;
+      height: 4.5rem;
+      width: 15rem;
+      transition: .4s all;
+      &:hover {
+        background-color: $grey-dark-2;
+        color: $grey-light-1;
+      }
+    }
+
+  }
+
+}
+//////////////////////////////
+// SEARCH
+.wrap {
+  position: absolute;
+  max-height: 0;
+  background-color: #fcfcfc;
+  margin-top: .5rem;
+  width: 100%;
+  border-radius: 3px;
+  z-index: 100000;
+  overflow: hidden;
+  opacity: 0;
+}
+
+
+.list.maker__list  li {
+  border-top: 1px solid $grey-light-3;
+  padding-left: .3rem;
+  padding-bottom: .7rem;
+  padding-top: .7rem;
+  color: $grey-dark-3;
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  
+}
+
+.list  label {
+  cursor: pointer;
+}
+
+
+.search__input.search__input__l {
+  width: 100%;
+  height: 3rem;
+  margin: 0;
+
+}
+.searching {
+  width: 33%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  position: relative;
+}
+
+///////////////////
+// CHECKBOX
+/* Customize the label (the container) */
+.m_li_item {
+  display: block;
+  border-top: 1px solid $grey-light-3;
+  position: relative;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: $grey-dark-3;
+}
+
+/* Hide the browser's default checkbox */
+.m_li_item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.m_li_item_text {
+  margin-left: 27px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 9px;
+  height: 17px;
+  width: 17px;
+  background-color: $grey-light-4;
+}
+
+/* On mouse-over, add a grey background color */
+.m_li_item:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.m_li_item input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.m_li_item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.m_li_item .checkmark:after {
+  left: 6.5px;
+  top: 3.3px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/////////////////
+// SELECT MODEL
+.select__content {
+  display: none;
+}
+
+.allWrap {
+  position: absolute;
+  top: 27px;
+}
+
+
+select {
+  overflow: hidden;
+  max-height: 3rem;
+  
+}
+
+select option {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  display: none;
+  visibility: hidden;
+}
+
+.search__input.models {
+  background-color: $grey-light-3;
+  padding-left: .5rem;
+  color: $grey-dark-2;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.search__input.white {
+  background-color: #fff;
+}
+
+.search__p {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-left: 1rem!important;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  & span {
+    color: $grey-dark-3;
+  }
+
+  & svg {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-primary;
+    margin-right: 1rem;
+  }
+}
+
+
+.models__select {
+  display: none;
+}
+
+
+.search__input.active {
+  background-color: #fff;
+}
+
+
+.search {
+  border:1px solid $grey-light-0;
+  padding: 2rem 1.5rem;
+  box-shadow: $shadow;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-start;
+  &__inputs {
+     display: flex;
+     
+  }
+  &__inputs:not(:last-of-type){
+    
+  }
+
+  &__input {
+    height: 3rem;
+    outline: none;
+    border: 1px solid $grey-light-4;
+    color: $grey-dark-1;
+    width: 33%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    overflow: hidden;
+    &:not(:last-of-type){
+      margin-right: 3rem;
+    }
+  }
+
+  & a {
+    font-weight: 600;
+    font-size: 1.4rem;
+    width: 25%;
+  }
+
+  &__btn {
+    color: #fff;
+    background-color: $color-primary;
+    font-size: 1.7rem;
+    width: 25%;
+    border-radius: 3px;
+    padding: .7rem 2rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+  }
+
+  &__small {
+    display: flex;
+
+    
+  }
+
+  &__inputs__sm {
+    height: 3rem;
+  
+  }
+}
+
+.search__input__sm {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  
+
+  & span {
+    color: $grey-dark-3;
+    font-size: 1.3rem;
+  }
+}
+
+.inp {
+  width: 33%;
+  display: flex;
+  margin-right: 3rem;
+  position: relative;
+}
+
+.search__item {
+    width: 33%;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    position: relative;
+}
+
+.choose__input.search__item {
+  width: 33%;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  position: relative;
+}
+
+.search__input.allDrops {
+  padding-left: .5rem;
+  color: $grey-dark-2;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.allWrap {
+    position: absolute;
+    max-height: 0;
+    background-color: #fcfcfc;
+    margin-top: .5rem;
+    width: 100%;
+    border-radius: 3px;
+    z-index: 100000;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s all; 
+}
+
+////////////////////////////
+// INPUT YEAR
+
+.input__year {
+  width: 100%;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.year__item {
+  padding: 10px;
+  color: $grey-dark-2;
+  font-size: 1.4rem;
+  transition: .2s;
+  &:hover {
+    background-color: $grey-light-3;
+  }
+}
+
+.check-all {
+  background-color: rgb(240, 240, 240);
+  
+}
+
+.showList {
+  max-height: 25rem;
+  overflow-y: scroll;
+  opacity: 1;
+  box-shadow: $shadow;
+  transition: .5 all;
+}
+
+
+
+////////////////////////
+// LOKACIJA
+
+.subList {
+  background-color: #fff;
+
+  & li span {
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+}
+
+.check-all-location {
+    background-color: rgb(240, 240, 240);
+    
+}

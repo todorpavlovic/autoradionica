@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oglašavanje Salona</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/basic.min.css">
+  <link rel="stylesheet" href="../css/dropzone.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a class="nav__link" href="automobili.html">Automobili</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link logo" href="#">Servis</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="logo">
+            <img src="../logo4.png" alt="">
+          </a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Delovi</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Usluge</a>
+        </li>
+      </ul>
+      <ul class="log__list">
+        <li class="nav__item"><a class="nav__link" href="#">Ulogujte se</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Registracija</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="main__header m-header"><a href="#">Oglasite Vaš Auto Salon</a></h1>
+
+    <form>
+      <div class="choose-lg">
+        <div class="choose__inputs">
+          <div class="grid-1-2">
+            <label>Ime auto salona</label><input type="text" placeholder="">
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Odaberite mesto</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                <li class="dropList__item">Herceg Novi</li>
+                <li class="dropList__item">Tivat</li>
+                <li class="dropList__item">Budva</li>
+                <li class="dropList__item">Kotor</li>
+                <li class="dropList__item">Ulcinj</li>
+                <li class="dropList__item">Cetinje</li>
+                <li class="dropList__item">Nikšić</li>
+                <li class="dropList__item">Podgorica</li>
+                <li class="dropList__item">Plužine</li>
+                <li class="dropList__item">Šavnik</li>
+                <li class="dropList__item">Žabljak</li>
+                <li class="dropList__item">Pljevlja</li>
+                <li class="dropList__item">Kolašin</li>
+                <li class="dropList__item">Mojkovac</li>
+                <li class="dropList__item">Bijelo polje</li>
+                <li class="dropList__item">Berane</li>
+                <li class="dropList__item">Andrijevica</li>
+                <li class="dropList__item">Velika</li>
+                <li class="dropList__item">Plav</li>
+                <li class="dropList__item">Rožaje</li>
+                <li class="dropList__item">Berane</li>
+                <li class="dropList__item">Berane</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-1-2">
+            <label>Adresa</label><input type="text" placeholder="">
+          </div>
+          <div class="grid-1-2">
+            <label>Telefon</label><input type="text" placeholder="">
+          </div>
+          <div class="grid-1-2">
+            <label>Mobilni 1</label><input type="text" placeholder="">
+          </div>
+          <div class="grid-1-2">
+            <label>Mobilni 2</label><input type="text" placeholder="">
+          </div>
+          <div class="grid-1-2">
+              <label>Email </label><input type="text" placeholder="">
+            </div>
+          <div class="grid-1-2">
+            <label>Website </label><input type="text" placeholder="">
+          </div>
+          <div class="grid-1-2">
+            <label>Facebook </label><input type="text" placeholder="">
+          </div>
+          <div class="grid-1-2">
+            <label>Instagram </label><input type="text" placeholder="">
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span class="showMark">Odaberite marke</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList selectMark list">
+
+              </ul>
+            </div>
+          </div>
+          <div class="mark">
+          <ul class="markePreview">
+            
+          </ul>
+        </div>
+          <div class="grid-1">
+            <div class="upload-files">
+              <label class="fileContainer">
+                  <span>Kliknite ovde da pošaljete vaš logo</span>  
+                  <input id="file-upload" type="file"/>
+              </label>
+              <div class="colors">
+                <p>Izaberite pozadinu (ukoliko je vaš logo bele boje onda izaberite crnu ili obratno).</p>
+                <div class="white"></div>
+                <div class="black"></div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </form>
+    <div class="head input__head"><h3 class="main__header description__header">Unos slika</h3></div> 
+    <div id="dropzone"><form action="/upload" class="dropzone needsclick" id="demo-upload">
+      <div class="dz-message needsclick">
+        Prevucite slike ili kliknite za slanje fotografija. Preporuceno minimalno 3 slike.<br />
+      </div>
+    </form></div>
+    <div class="buttonsOnBottom">
+        <input class="search__btn btn__dark" type="submit" value="Obriši">
+        <input class="search__btn" type="submit" value="Snimi">
+      </div>
+  </div>
+
+
+
+
+  <script src="../js/input.js"></script>
+  <script src="../js/selectMark.js"></script>
+  <script src="../js/dropzone.min.js"></script>
+  <script>
+  var inputUpload = document.getElementById( 'file-upload' );
+  var infoArea = document.querySelector('.fileContainer span');
+
+  inputUpload.addEventListener( 'change', showFileName );
+    console.log(infoArea);
+  function showFileName( event ) {
+    
+    // use fileName however fits your app best, i.e. add it into a div
+    infoArea.textContent = 'Uspešno ste selektovali sliku';
+  }
+  document.querySelector('.white').addEventListener('click', function(e){
+    document.querySelector('.white').classList.add('addBorder');
+    document.querySelector('.black').classList.remove('addBorder');
+  });
+  document.querySelector('.black').addEventListener('click', function(e){
+    document.querySelector('.black').classList.add('addBorder');
+    document.querySelector('.white').classList.remove('addBorder');
+  });
+
+  
+  
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vas Oglas</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/basic.min.css">
+  <link rel="stylesheet" href="../css/dropzone.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a class="nav__link" href="automobili.html">Automobili</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link logo" href="#">Servis</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="logo">
+            <img src="../logo4.png" alt="">
+          </a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Delovi</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Usluge</a>
+        </li>
+      </ul>
+      <ul class="log__list">
+        <li class="nav__item"><a class="nav__link" href="#">Ulogujte se</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Registracija</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+      <div class="head m-header"><h3 class="main__header">Postavljanje oglasa</h3></div> 
+    <form>
+
+      <div class="choose">
+          <div class="head input__head"><h3 class="main__header description__header">Marka i model</h3></div> 
+        <div class="choose__inputs">
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Odaberite marku</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList odaberiteMarku">
+
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Odaberite model</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap mt-s">
+              <ul class="dropList odaberiteModel">
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="grid-1-2">
+            <label>Obelezje</label><input type="text" placeholder="1.6 tdi">
+          </div>
+        </div>
+        <div class="head input__head"><h3 class="main__header description__header">Osnovne informacije</h3></div> 
+        <div class="choose__inputs">
+          <div class="grid-1-2">
+            <label>Godište</label><input type="text" placeholder="year">
+          </div>
+
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Karoserija</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Limuzina</li>
+                  <li class="dropList__item">Hečbek</li>
+                  <li class="dropList__item">Karavan</li>
+                  <li class="dropList__item">Kupe</li>
+                  <li class="dropList__item">Kabriolet</li>
+                  <li class="dropList__item">Monovolumen(MiniVan)</li>
+                  <li class="dropList__item">Džip/SUV</li>
+                  <li class="dropList__item">Pickup</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Gorivo</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                <li class="dropList__item">Benzin</li>
+                <li class="dropList__item">Dizel</li>
+                <li class="dropList__item">Benzin + Gas</li>
+                <li class="dropList__item">Električni pogon</li>
+                <li class="dropList__item">Hibrid</li>
+                <li class="dropList__item">Metan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-1-2">
+            <label>Kubikaža (cm3)</label><input type="text" placeholder="1557 cm3">
+          </div>
+        </div>
+
+        <div class="head input__head"><h3 class="main__header description__header">Karakteristike vozila</h3></div> 
+        <div class="choose__inputs">
+          <div class="grid-1-2">
+            <label>Snaga (kW)</label><input type="text" placeholder="power">
+          </div>
+
+          <div class="grid-1-2">
+            <label>Snaga (KS)</label><input type="text" placeholder="horse power">
+          </div>
+          <div class="grid-1-2">
+            <label>Kilometraža</label><input type="text" placeholder="distance">
+          </div>
+
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Emisiona klasa motora</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Euro 1</li>
+                  <li class="dropList__item">Euro 2</li>
+                  <li class="dropList__item">Euro 3</li>
+                  <li class="dropList__item">Euro 4</li>
+                  <li class="dropList__item">Euro 5</li>
+                  <li class="dropList__item">Euro 6</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Pogon</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Prednji</li>
+                  <li class="dropList__item">Zadnji</li>
+                  <li class="dropList__item">4x4</li>
+                  <li class="dropList__item">4x4 reduktor</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Menjač</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Manuelni 4 brzine</li>
+                  <li class="dropList__item">Manuelni 5 brzine</li>
+                  <li class="dropList__item">Manuelni 6 brzine</li>
+                  <li class="dropList__item">Poluautomatski</li>
+                  <li class="dropList__item">Automatski</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Broj vrata</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">2/3 vrata</li>
+                  <li class="dropList__item">4/5 vrata</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Broj sedišta</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">2 sedišta</li>
+                  <li class="dropList__item">3 sedišta</li>
+                  <li class="dropList__item">4 sedišta</li>
+                  <li class="dropList__item">5 sedišta</li>
+                  <li class="dropList__item">6 sedišta</li>
+                  <li class="dropList__item">7 sedišta</li>
+                  <li class="dropList__item">8 sedišta</li>
+                  <li class="dropList__item">9 sedišta</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Strana volana</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Levi volan</li>
+                  <li class="dropList__item">Desni volan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Klima</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Nema klimu</li>
+                  <li class="dropList__item">Manuelna klima</li>
+                  <li class="dropList__item">Automatska klima</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Boja</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Bela</li>
+                  <li class="dropList__item">Bež</li>
+                  <li class="dropList__item">Bordo</li>
+                  <li class="dropList__item">Braon</li>
+                  <li class="dropList__item">Crna</li>
+                  <li class="dropList__item">Crvena</li>
+                  <li class="dropList__item">Kameleon</li>
+                  <li class="dropList__item">Krem</li>
+                  <li class="dropList__item">Ljubičasta</li>
+                  <li class="dropList__item">Narandžasta</li>
+                  <li class="dropList__item">Plava</li>
+                  <li class="dropList__item">Siva</li>
+                  <li class="dropList__item">Smeđa</li>
+                  <li class="dropList__item">Srebrna</li>
+                  <li class="dropList__item">Tirkiz</li>
+                  <li class="dropList__item">Teget</li>
+                  <li class="dropList__item">Zelena</li>
+                  <li class="dropList__item">Zlatna</li>
+                  <li class="dropList__item">Žuta</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Materijal enterijera</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Štof</li>
+                      <li class="dropList__item">Prirodna koža</li>
+                      <li class="dropList__item">Kombinovana koža</li>
+                      <li class="dropList__item">Velur</li>
+                      <li class="dropList__item">Drugi</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Boja enterijera</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Crna</li>
+                  <li class="dropList__item">Bež</li>
+                  <li class="dropList__item">Smeđa</li>
+                  <li class="dropList__item">Siva</li>
+                  <li class="dropList__item">Druga</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Registrovan do</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList yearList">
+                
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Oštećenje</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Nije oštećen</li>
+                  <li class="dropList__item">Oštećen - u voznom stanju</li>
+                  <li class="dropList__item">Nije u voznom stanju</li>
+              </ul>
+            </div>
+          </div>
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Bez zamene</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Bez zamene</li>
+                  <li class="dropList__item">Zamena za jeftinije</li>
+                  <li class="dropList__item">Zamena u istoj ceni</li>
+                  <li class="dropList__item">Zamena za skuplje</li>
+                  <li class="dropList__item">Svejedno</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="head input__head"><h3 class="main__header description__header">Karakteristike vozila</h3></div> 
+        <div class="choose__inputs mb">
+          <div class="choose__input">
+            <p class="choose__input__single"><span>Poreklo vozila</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList">
+                  <li class="dropList__item">Domaće tablice</li>
+                  <li class="dropList__item">Na ime kupca</li>
+                  <li class="dropList__item">Strane tablice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!--                            SAFETY                     -->
+
+
+
+
+        <div class="head"><h3 class="main__header description__header">Sigurnost</h3></div> 
+      <ul class="choose-full">
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Airbag za vozača</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Airbag za suvozača</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Bočni airbag</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Child lock</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">ABS</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">ESP</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">ASR</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Alarm</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Kodiran ključ</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Blokada motora</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Centralno zaključavanje</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Mehanička zaštita</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Ulazak bez ključa</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Asistencija praćenja trake</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Senzor mrtvog ugla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">OBD zaštita</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+      </ul>
+      <div class="head"><h3 class="main__header description__header">Oprema</h3></div> 
+      <ul class="choose-full">
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Metalik boja</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Branici u boji auta</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Servo volan</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Multifunkcionalan volan</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Tempomat</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Daljinsko zaključavanje</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Putni računar</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Šiber</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Panorama krov</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Tonirana stakla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Električni podizači</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Električni retrovizori</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Grejači retrovizora</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Sedišta podesiva po visini</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Elektro podesiva sedišta</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Grejanje sedišta</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Svetla za maglu</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Xenon svetla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Senzori za svetla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Senzori za kišu</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Parking senzori</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Webasto</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Krovni nosač</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Kuka za vuču</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Alumunijumske felne</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Navigacija</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Bluetooth</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Radio/Kasetofon</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Radio CD</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">CD changer</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">DVD/TV</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">LED prednja svetla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Grejači vetrobranskog stakla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">LED zadnja svetla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Naslon za ruku</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Adaptivni tempomat</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Automatsko parkiranje</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Kamera</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Hands free</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Adaptivna svetla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Head-up displaz</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">ISOFIX sistem</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Start-stop sistem</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Prednja noćna kamera</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Multimedija</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Glasovne komande</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Masažna sedišta</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Elektro sklopivi retrovizori</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Memorija sedišta</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Sportska sedišta</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Sportsko vešanje</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Multifunkcionalan volan</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">DPF filter</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Dnevna svetla</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Torba za skije</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Upravljanje na sva četiri točka</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Brisači prednjih farova</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">360 kamera</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Fabrički ugradjeno dečije sedište</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Ekran na dodir</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Kožni volan</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Volan u kombinaciji drvo/koža</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Grejanje volana</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Elektro zatvaranje prtljažnika</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Zavesice na zadnjim prozorima</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Privlačenje vrata pri zatvaranju</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">USB</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Paljenje bez ključa</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Hard disk</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Ventilacija sedišta</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Vazdušno vešanje</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Ambijentno osvetljenje</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+      </ul>
+      
+
+      <!--          STANJE VOZILA       -->
+
+
+      <div class="head"><h3 class="main__header description__header">Stanje vozila</h3></div> 
+      <ul class="choose-full">
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Prvi vlasnik</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Kupljen nov u Srbiji</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Garancija</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Garažiran</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Servisna knjiga</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Rezervni kljuc</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Restauriran</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Oldtimer</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Prilagodjeno invalidima</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Taxi</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Test vozilo</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+        <li class="grid-1-4">
+          <label class="check__item"><span class="check__item__text">Tuning</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </li>
+      </ul>
+      <div class="head input__head"><h3 class="main__header description__header">Cena</h3></div> 
+      <div class="choose">
+      <div class="choose__inputs">
+            <div class="grid-1-2">
+                <label>Cena</label><input type="text" placeholder="Po dogovoru">
+              </div>
+          <p class="grid-1-2">
+            <label class="check__item"><span class="check__item__text">Fiksna cena</span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </p>
+      </div>
+    </div>
+    <div class="head input__head"><h3 class="main__header description__header">Opis oglasa</h3></div> 
+    <div class="choose-full">
+        <textarea rows="5" cols="30" placeholder="Unesite opis oglasa">
+
+          </textarea>
+        </div>
+</form>
+        <div class="head input__head"><h3 class="main__header description__header">Unos slika</h3></div> 
+        <div id="dropzone"><form action="/upload" class="dropzone needsclick" id="demo-upload">
+          <div class="dz-message needsclick">
+            Prevucite slike ili kliknite za slanje fotografija. Preporuceno minimalno 3 slike.<br />
+          </div>
+        </form>
+      </div>
+      <form>
+        <div class="head input__head"><h3 class="main__header description__header">Kontakt podaci</h3></div> 
+        <div class="choose">
+        <div class="choose__inputs">
+            <div class="grid-1-2">
+                <label>Ime</label><input type="text" placeholder="">
+              </div>
+    
+              <div class="grid-1-2">
+                <label>Prezime</label><input type="text" placeholder="">
+              </div>
+              <div class="choose__input">
+                  <p class="choose__input__single"><span>Odaberite mesto</span>
+                    <svg>
+                      <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+                    </svg>
+                  </p>
+                  <div class="allWrap">
+                    <ul class="dropList">
+                  <li class="dropList__item">Herceg Novi</li>
+                  <li class="dropList__item">Tivat</li>
+                  <li class="dropList__item">Budva</li>
+                  <li class="dropList__item">Kotor</li>
+                  <li class="dropList__item">Ulcinj</li>
+                  <li class="dropList__item">Cetinje</li>
+                  <li class="dropList__item">Nikšić</li>
+                  <li class="dropList__item">Podgorica</li>
+                  <li class="dropList__item">Plužine</li>
+                  <li class="dropList__item">Šavnik</li>
+                  <li class="dropList__item">Žabljak</li>
+                  <li class="dropList__item">Pljevlja</li>
+                  <li class="dropList__item">Kolašin</li>
+                  <li class="dropList__item">Mojkovac</li>
+                  <li class="dropList__item">Bijelo polje</li>
+                  <li class="dropList__item">Berane</li>
+                  <li class="dropList__item">Andrijevica</li>
+                  <li class="dropList__item">Velika</li>
+                  <li class="dropList__item">Plav</li>
+                  <li class="dropList__item">Rožaje</li>
+                  <li class="dropList__item">Berane</li>
+                  <li class="dropList__item">Berane</li>
+                    </ul>
+                  </div>
+                </div>
+            <div class="grid-1-2">
+              <label>Poštanski broj</label><input type="text" placeholder="">
+            </div>
+
+            <div class="grid-1-2">
+                <label>Adresa</label><input type="text" placeholder="">
+              </div>
+            <div class="grid-1-2">
+                  <label>Telefon</label><input type="text" placeholder="">
+                </div>
+                <div class="grid-1-2">
+                    <label>Mobilni 1</label><input type="text" placeholder="">
+                  </div>
+                <div class="grid-1-2">
+                    <label>Mobilni 2</label><input type="text" placeholder="">
+                  </div>
+
+          </div>
+        </div>
+        <div class="buttonsOnBottom">
+        <input class="search__btn btn__dark" type="submit" value="Obriši">
+        <input class="search__btn" type="submit" value="Snimi">
+      </div>
+    </form>
+  </div>
+
+<script src="../js/input.js"></script>
+<script src="../js/dropzone.min.js"></script>
+<script src="../js/getMakerAndModel.js"></script>
+</body>
+</html>

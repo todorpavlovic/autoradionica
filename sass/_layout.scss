@@ -1,0 +1,85 @@
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  border: 1px solid $grey-light-3;
+  padding: 2rem;
+  min-height: 50rem;
+  padding-top: 0;
+  background-color: #fff;
+}
+.container-full {
+  max-width: 120rem;
+  margin: 0 auto;
+  border: 1px solid $grey-light-3;
+  min-height: 50rem;
+  padding-top: 0;
+  background-color: #fff;
+}
+
+
+//////////////////////////////
+// HEADER
+
+header {
+  height: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: .5rem;
+}
+
+.flex-content {
+  display: flex;
+  margin-top: 4rem;
+ 
+}
+
+.flex {
+  display: flex;
+  
+}
+
+.servisi-content {
+  padding: 2rem;
+  margin-top: 2rem;
+  min-width: 60%;
+}
+
+.sidebar {
+  flex: 0 0 20%;
+  background-color: $grey-dark-1;
+  align-self: stretch;
+}
+
+
+
+
+/////////////////////////////
+// ARTICLES
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-basis: 75%;
+  
+}
+
+.ads {
+  margin-left: 2rem;
+  background-color: $grey-dark-4;
+  flex-basis: 25%;
+}
+
+.content {
+  margin-top: 10rem;
+}

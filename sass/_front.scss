@@ -1,0 +1,231 @@
+///////////////////////////
+// HEADER PART
+
+.overlay {
+  position: absolute;
+  height: 83vh;
+  top: 0;
+  left: 0;
+  filter: brightness(73%);
+  width: 100%;
+  z-index: -1;
+  background-image: url(../img/pexels-photo-120049.jpeg);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  justify-content: space-between;
+  &__content {
+    margin-top: 10rem;
+    margin-left: 15rem;
+    & a {
+      & span {
+        color: $color-primary;
+      }
+      color: $grey-light-1;
+    }
+    
+  }
+
+  &__title {
+    color: $grey-light-1;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    position: relative;
+    font-size: 5rem;
+    font-family: 'Open Sans', sans-serif;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -2.5rem;
+      width: 5rem;
+      height: 3px;
+      background-color: $color-primary-light;
+    }
+  }
+  
+
+  &__p {
+    width: 55rem;
+    color: $grey-light-4;
+  }
+
+  &__nav {
+    display: flex;
+    align-self: center;
+
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      background-color: rgba(20, 20, 20, 0.8);
+      margin: 0 7rem;
+      width: 18rem;
+      height: 18rem;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+
+      & i {
+        width: 6rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      & h3 {
+        color: $grey-light-1;
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+//////////////////////////
+// SECTION
+
+.section {
+  padding-bottom: 10rem;
+  &__header {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1), #fff);
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    position: relative;
+    &::before {
+      content: '';
+      height: 60%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1rem;
+      background-color: $color-primary-dark;
+    }
+
+    &__title {
+      color: $grey-dark-1;
+      font-size: 3.5rem;
+      
+      margin-left: 6rem;
+    }    
+
+    &__p {
+      margin-left: 6rem;
+      margin-top: 2.5rem;
+      color: $grey-dark-2;
+    }
+  
+}
+
+  &__content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    & figure {
+      flex-basis: 50%;
+      align-self: center;
+      margin: 3rem;
+      margin-left: 0;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__nav {
+    flex-basis: 20%;
+    align-self: center;
+    max-height: 300px;
+    & ul {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      
+      
+    }
+
+    &__item:last-of-type {
+      border-bottom: 1px solid $grey-light-4;
+    }
+    &__item {
+      border-top: 1px solid $grey-light-4;
+      text-transform: uppercase;
+      overflow: hidden;
+      & a {
+        color: #4d4d4d;
+        font-size: 1.7rem;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover .arrow-one {
+          transform: translateX(-10px);
+        }
+        &:hover .arrow-second {
+          transform: translateY(5px);
+        }
+      }
+
+      & svg {
+        width: 2rem;
+        height: 2rem;
+        fill: $color-primary;
+        transition: .6s;
+      }
+
+    }
+
+    &__sub {
+      width: 100%;
+      margin: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 3s linear;
+    &__item {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    }
+
+    & a.section__nav__link{
+     
+     display: block;
+     padding: 1rem;
+     font-size: 1.5rem;
+     
+     text-transform: none;
+    }
+
+  }
+
+  &__p {
+    margin-left: 6rem;
+    & a {
+      color: $color-primary;
+    }
+  }
+}
+
+.drop:target .section__nav__sub {
+  max-height: 10rem;
+}

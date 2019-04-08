@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Auto Placevi</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+
+    <nav class="nav">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a class="nav__link" href="automobili.html">Automobili</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link logo" href="#">Servis</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="logo">
+            <img src="../logo4.png" alt="">
+          </a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Delovi</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Usluge</a>
+        </li>
+      </ul>
+      <ul class="log__list">
+        <li class="nav__item"><a class="nav__link" href="#">Ulogujte se</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Registracija</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="flex-content">
+      <main class="main">
+          <div class="head"><h3 class="main__header">Automobili</h3></div> 
+        <div class="main__section">
+          <h1 class="main__section__header"><a href="automobili.html">Auto oglasi</a></h1>
+          <h1 class="main__section__header"><a href="autosaloni.html">Auto saloni</a></h1>
+          <h1 class="main__section__header bg-dark"><a href="autoplacevi.html">Auto placevi</a></h1>
+        </div>
+        <form class="search">
+          <div class="choose__input search__item">
+            <p class="choose__input__single search__p"><span class="showMark">Odaberite marke</span>
+              <svg>
+                <use xlink:href="../img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <ul class="dropList selectMark list">
+
+              </ul>
+            </div>
+          </div>
+
+          <div id="lokacija" class="choose__input search__item">
+            <p class="choose__input__single search__input allDrops search__p white"><span>Lokacija</span>
+              <svg>
+                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+              </svg>
+            </p>
+            <div class="allWrap">
+              <p class="check-all-location">
+                <label class="m_li_item"><span class="m_li_item_text">Odaberite sve</span>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </p>
+              <ul class="list">
+                <li>
+                  <label class="m_li_item"><span class="m_li_item_text">Južni</span>
+                    <input class="check-subList" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                <ul class="subList">
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Herceg Novi</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Kotor</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Tivat</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Budva</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Bar</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Ulcinj</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+                <li>
+                  <label class="m_li_item"><span class="m_li_item_text">Centralni</span>
+                    <input class="check-subList" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                <ul class="subList">
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Cetinje</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Podgorica</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Nikšić</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+                <li>
+                  <label class="m_li_item"><span class="m_li_item_text">Sjeverni</span>
+                    <input class="check-subList" type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+                <li>
+                <ul class="subList">
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Plužine</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Šavnik</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Žabljak</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Pljevlja</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Kolašin</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Mojkovac</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Bijelo Polje</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Berane</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Andrijevica</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Velika</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Plav</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="m_li_item"><span class="m_li_item_text">Rožaje</span>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              </ul>
+            </div>
+          </div>
+          <input class="search__btn" type="submit" value="Pretrazi">
+
+        </form>
+
+        <div class="oglasi">
+          <h1>Cetinje</h1>
+        </div>
+        <div class="articles">
+          <a class="articles__link" href="#">
+            <article class="card">
+              <figure class="card__figure"><img src="http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2015/01/16210032/TAS2015-Mishmash-58.jpg"
+                  alt="maserati">
+                <figcaption class="card__caption">
+                  <h2>Auto Tivat</h2>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+          <a class="articles__link" href="#">
+            <article class="card">
+              <figure class="card__figure"><img src="http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2015/01/16210032/TAS2015-Mishmash-58.jpg"
+                  alt="maserati">
+                <figcaption class="card__caption">
+                  <h2>Auto Tivat</h2>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+          <a class="articles__link" href="#">
+            <article class="card">
+              <figure class="card__figure"><img src="http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2015/01/16210032/TAS2015-Mishmash-58.jpg"
+                  alt="maserati">
+                <figcaption class="card__caption">
+                  <h2>Auto Tivat</h2>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+        </div>
+        <div class="oglasi">
+          <h1>Tivat</h1>
+        </div>
+        <div class="articles">
+          <a class="articles__link" href="#">
+            <article class="card">
+              <figure class="card__figure"><img src="https://f0c07b7681885ffd0f75-623de964bdf7b407046db1204551b0ce.ssl.cf1.rackcdn.com/ZAM45VLA1J0260277/e779da97e0db0f6126dcac85ecc842f4.jpg"
+                  alt="maserati">
+                <figcaption class="card__caption">
+                  <h2>Auto Tivat Auto Tivat Auto Tivat</h2>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+          <a class="articles__link" href="#">
+            <article class="card">
+              <figure class="card__figure"><img src="https://f0c07b7681885ffd0f75-623de964bdf7b407046db1204551b0ce.ssl.cf1.rackcdn.com/ZAM45VLA1J0260277/e779da97e0db0f6126dcac85ecc842f4.jpg"
+                  alt="maserati">
+                <figcaption class="card__caption">
+                  <h2>Auto Tivat</h2>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+          <a class="articles__link" href="#">
+            <article class="card">
+              <figure class="card__figure"><img src="https://f0c07b7681885ffd0f75-623de964bdf7b407046db1204551b0ce.ssl.cf1.rackcdn.com/ZAM45VLA1J0260277/e779da97e0db0f6126dcac85ecc842f4.jpg"
+                  alt="maserati">
+                <figcaption class="card__caption">
+                  <h2>Auto Tivat</h2>
+                </figcaption>
+              </figure>
+            </article>
+          </a>
+        </div>
+
+
+      </main>
+      <div class="ads">
+        <h3>Reklame</h3>
+      </div>
+    </div>
+  </div>
+  <script src="js/selekcijaMarkiUpretrazi.js"></script>
+  <script src="js/location.js"></script>
+</body>
+
+</html>
